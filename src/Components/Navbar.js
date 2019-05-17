@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
 
@@ -13,17 +13,25 @@ class Navbar extends Component {
                             <i className="fa fa-bars fa-2x"></i>
                         </div>
                         <div className="logo">
-                            <a className="navbar-brand" href="n">
+                            <Link className="navbar-brand" to='/Home' >
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuzYp7MWHvmubiwu5vX08XE5vQBv7Ui7fVvUBj_s_4O-ZikfQiJA " alt="" />
-                            </a>
+                            </Link>
                         </div>
                         <div className="menu">
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Services</a></li>
+                               <li><Link class="mdl-navigation__link" to="/Home">
+                                Home
+                                </Link></li>
+                                <li><Link class="mdl-navigation__link" to="/About">
+                                about
+                                </Link></li>
+                                <li><Link class="mdl-navigation__link" to="/Blog">
+                                blog
+                                </Link></li>
+                                <li><Link class="mdl-navigation__link" to="/Contact">
+                                Contact
+                                </Link></li>
+                                <li><a href="#"></a></li>
 
                             </ul>
                         </div>
